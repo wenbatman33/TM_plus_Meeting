@@ -1,0 +1,49 @@
+@mixin cssSprite( $spriteVals ) {
+	width: nth( $spriteVals, 1 );
+	height: nth( $spriteVals, 2 );
+	background-repeat: no-repeat;
+	background-image: url(nth( $spriteVals, 3 ));
+	background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+  vertical-align: middle;
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ) {
+		background-image: url( nth( $spriteVals, 6 ));
+		background-size: $bgiSizeW $bgiSizeH;
+	}
+
+}
+$cssSpritePath: '../img/cssSprite';
+$cssSpriteURL: $cssSpritePath + '.png';
+$cssSpritex2URL: $cssSpritePath + '@2x.png';
+$bgiSizeW: 1029px;
+$bgiSizeH: 529px;
+
+$functionBar_ViewMode_2: 70px 61px $cssSpriteURL -88px -198px $cssSpritex2URL;
+$functionBar_ViewMode_1: 70px 61px $cssSpriteURL -5px -198px $cssSpritex2URL;
+$functionBar_ViewMode_3: 70px 61px $cssSpriteURL -168px -198px $cssSpritex2URL;
+$functionBar_Help: 70px 61px $cssSpriteURL -249px -198px $cssSpritex2URL;
+$functionBar_IT: 70px 61px $cssSpriteURL -330px -198px $cssSpritex2URL;
+$functionBar_nofication: 70px 61px $cssSpriteURL -411px -198px $cssSpritex2URL;
+$functionBar_volume: 70px 61px $cssSpriteURL -493px -198px $cssSpritex2URL;
+$functionBar_setting: 70px 61px $cssSpriteURL -574px -198px $cssSpritex2URL;
+$functionBar_mic: 70px 61px $cssSpriteURL -655px -198px $cssSpritex2URL;
+$whiteboard_expand: 40px 40px $cssSpriteURL -5px -71px $cssSpritex2URL;
+$whiteboard_download: 40px 40px $cssSpriteURL -54px -71px $cssSpritex2URL;
+$whiteboard_ZoomIn: 50px 40px $cssSpriteURL -3px -135px $cssSpritex2URL;
+$whiteboard_ZoomOut: 40px 40px $cssSpriteURL -52.00000000000001px -135px $cssSpritex2URL;
+$whiteboard_prev: 40px 40px $cssSpriteURL -103px -71px $cssSpritex2URL;
+$whiteboard_next: 40px 40px $cssSpriteURL -153px -71px $cssSpritex2URL;
+$whiteboard_pencil: 40px 40px $cssSpriteURL -101.00000000000001px -135px $cssSpritex2URL;
+$whiteboard_pen: 40px 40px $cssSpriteURL -150px -135px $cssSpritex2URL;
+$whiteboard_line: 40px 40px $cssSpriteURL -199.00000000000003px -135px $cssSpritex2URL;
+$whiteboard_rect: 40px 40px $cssSpriteURL -249px -135px $cssSpritex2URL;
+$whiteboard_circle: 40px 40px $cssSpriteURL -298px -135px $cssSpritex2URL;
+$whiteboard_triangle: 40px 40px $cssSpriteURL -347.00000000000006px -135px $cssSpritex2URL;
+$whiteboard_text: 40px 40px $cssSpriteURL -396px -135px $cssSpritex2URL;
+$whiteboard_eraser: 40px 40px $cssSpriteURL -445px -135px $cssSpritex2URL;
+$whiteboard_trashcan: 40px 40px $cssSpriteURL -494.00000000000006px -135px $cssSpritex2URL;
+$whiteboard_emoji: 40px 40px $cssSpriteURL -543px -135px $cssSpritex2URL;
+$whiteboard_reload: 40px 40px $cssSpriteURL -592px -135px $cssSpritex2URL;
+$whiteboard_export: 40px 40px $cssSpriteURL -641px -135px $cssSpritex2URL;
+$vipabc: 140px 40px $cssSpriteURL -3px -6px $cssSpritex2URL;
+$TutorABC: 140px 40px $cssSpriteURL -153px -6px $cssSpritex2URL;
+$iTutorGroup: 140px 40px $cssSpriteURL -303px -6px $cssSpritex2URL;

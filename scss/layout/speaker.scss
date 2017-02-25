@@ -1,0 +1,20 @@
+.speaker {
+  width: 100%;
+  text-align: right;
+  padding: 20px 40px 0 0;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+
+  span {
+    padding: 4px 8px;
+    margin-left: 3px;
+    font-weight: 400;
+    @include border-radius(3px);
+    @include background-gradient-horizontal($greenRight, $greenEnd);
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .speaker  { padding: 15px 25px 0 0; }
+}

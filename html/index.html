@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TutorMeet+</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://vjs.zencdn.net/5.8.8/video-js.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/chosen.min.css">
+    <link rel="stylesheet" href="assets/css/chosen-bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.offcanvas.css">
+    <link rel="stylesheet" href="assets/css/TutorMeetPlus.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    
+    -->
+  </head>
+</html>
+<body class="TMP-body">
+  <div class="sub-wrapper">
+    <!-- header-->
+    <header class="flex">
+      <div class="logo"></div>
+      <!-- console-wrap-->
+      <setion class="console-wrap flex align-center">
+        <div class="member-info flex align-center">
+          <div class="name-label color-k">k</div>
+          <div class="name-sayhi">
+            <p>kateKate linLin</p>
+            <p>Host</p>
+          </div>
+        </div>
+        <div class="console-audio flex align-center space-between">
+          <div id="console-mic" class="text-center">
+            <div class="border">
+              <p class="flex justify-center"><img src="static/images/icon-mic.svg"></p>
+              <div class="sp sp-wave"></div>
+            </div><span>mic</span>
+          </div>
+          <div id="console-cam" class="text-center">
+            <div class="border">
+              <p class="flex justify-center"><img src="static/images/icon-cam.svg"></p>
+            </div><span>cam</span>
+          </div>
+          <div class="cam-allopen">
+            <div class="w100 flex">
+              <h5>您的音訊預設開啟、視訊預設關閉</h5>
+              <div class="cam-btn">OK</div>
+            </div>
+          </div>
+          <div id="console-screen" data-toggle="modal" data-target="#screenModal" class="text-center">
+            <div class="border">
+              <p class="flex justify-center"><img src="static/images/icon-screen.svg"></p>
+            </div><span>screen</span>
+            <div class="screen-share">共享螢幕中</div>
+          </div>
+        </div>
+        <div id="host" class="navbar-toggle offcanvas-toggle console-item flex align-center">
+          <div class="w100">
+            <p class="label-host"></p>
+            <p>host</p>
+          </div>
+        </div>
+        <div id="setting" class="navbar-toggle offcanvas-toggle console-item flex align-center">
+          <div class="w100">
+            <p class="label-option"></p>
+            <p>setting</p>
+          </div>
+        </div>
+      </setion>
+      <!-- end // console-wrap-->
+      <!-- member-wrap-->
+      <setion class="member-wrap flex flex-end">
+        <div class="w100"></div>
+        <div class="member-ctrl flex align-center">
+          <div class="dropdown">
+            <div id="search" class="flex align-center search">
+              <div class="member-item color-k">k</div>
+              <div class="member-item color-e">e</div>
+              <div style="background: url(static/images/photo.jpg);" class="member-item color-s"></div>
+              <div class="member-item color-s">S</div>
+              <div class="member-item member-count color-gray">+4</div>
+            </div>
+            <div class="dropdown-menu search-wrap">
+              <h4>與會人員 <span>230</span></h4>
+              <div class="inner-addon right-addon mg-btm20"><i class="glyphicon glyphicon-search search"></i>
+                <input type="text" placeholder="以英文姓名搜尋">
+              </div>
+              <ul class="name-list list-group">
+                <li class="list-group-item"><span class="badge">host</span>Kate Lin</li>
+                <li class="list-group-item">Cathy Wuu</li>
+                <li class="list-group-item">Teddy Chang</li>
+                <li class="list-group-item">Solomon Chen</li>
+                <li class="list-group-item">Kate Lin</li>
+                <li class="list-group-item">Cathy Wu</li>
+                <li class="list-group-item">Teddy Chang</li>
+                <li class="list-group-item">Solomon Chen</li>
+                <li class="list-group-item">Kate Lin</li>
+                <li class="list-group-item">Cathy Wu</li>
+                <li class="list-group-item">Teddy Chang</li>
+                <li class="list-group-item">Solomon Chen</li>
+                <li class="list-group-item">Kate Lin</li>
+                <li class="list-group-item">Cathy Wu</li>
+                <li class="list-group-item">Teddy Chang</li>
+                <li class="list-group-item">Solomon Chen</li>
+                <li class="list-group-item">Kate Lin</li>
+                <li class="list-group-item">Cathy Wu</li>
+                <li class="list-group-item">Teddy Chang</li>
+                <li class="list-group-item">Solomon Chen</li>
+                <li class="list-group-item">Kate Lin</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div id="invite" class="member-item member-add">＋</div>
+            <div class="dropdown-menu invite-wrap">
+              <h4>邀請與會者</h4>
+              <div class="w100 flex mg-btm20">
+                <p class="item-left">
+                  <input type="" placeholder="姓名">
+                </p>
+                <p class="item-right">
+                  <input type="" placeholder="email">
+                </p>
+              </div>
+              <div id="add-item"></div>
+              <div class="w100 flex">
+                <p class="item-left append"><span class="add">+</span>增加邀請</p>
+                <p class="item-right text-right">
+                  <div type="" class="btn button">邀請 <span id="itemId">1</span> 位與會者</div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meetingID flex align-center">
+          <div class="w100 text-right">
+            <p>meeting ID</p>
+            <p>9388428143</p>
+          </div>
+        </div>
+      </setion>
+      <!-- end // member-wrap-->
+    </header>
+    <!-- speaker-->
+    <section class="speaker">Now Speaker as <span>Kate Lin , Cathy Wu</span></section>
+    <!-- container-->
+    <section class="container main">
+      <!-- video-->
+      <div id="video">
+        <ul></ul>
+      </div>
+      <!-- whiteboard-->
+      <div id="whiteboard" class="flex">
+        <div class="wb-wrap w100">
+          <div class="wb-content flex align-center justify-center">
+            <ul>
+              <li><img src="assets/images/wb-dropfile.svg"></li>
+              <li>Drop your files here</li>
+            </ul>
+          </div>
+          <div class="wb-console flex align-center justify-center">
+            <ul class="panel">
+              <li><img src="assets/images/wb-arrow.svg" id="wb-arrow"></li>
+              <li>
+                <div class="dropup"><img id="wb-pan" src="assets/images/wb-pan.svg">
+                  <div class="dropdown-menu pan-shape">
+                    <div class="wb-title">筆觸</div>
+                    <div class="wb-drop flex nobetween">
+                      <div class="panBox flex align-center active"><img src="assets/images/wb-pan-1.svg"></div>
+                      <div class="panBox flex align-center"><img src="assets/images/wb-pan-2.svg"></div>
+                    </div>
+                    <div class="wb-title">顏色</div>
+                    <div class="wb-drop fillColor flex">
+                      <div class="color flex align-center">
+                        <div class="colorBox color-1"></div>
+                      </div>
+                      <div class="color flex align-center active">
+                        <div class="colorBox color-10"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-2"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-3"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-4"></div>
+                      </div>
+                    </div>
+                    <div class="wb-drop fillColor flex">
+                      <div class="color flex align-center">
+                        <div class="colorBox color-5"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-6"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-7"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-8"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-9"></div>
+                      </div>
+                    </div>
+                    <div class="wb-title">粗細</div>
+                    <div class="wb-drop fillWide flex">
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-1"></div>
+                      </div>
+                      <div class="wideBox flex align-center active">
+                        <div class="dot wide-2"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-3"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-4"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropup"><img id="wb-shape" src="assets/images/wb-shape.svg">
+                  <div class="dropdown-menu pan-shape">
+                    <div class="wb-title">形狀</div>
+                    <div class="wb-drop flex">
+                      <div class="shapeBox flex align-center">
+                        <div class="shape-square"></div>
+                      </div>
+                      <div class="shapeBox flex align-center">
+                        <div class="shape-circle"></div>
+                      </div>
+                      <div class="shapeBox flex align-center">
+                        <div class="shape-angles"><img src="assets/images/wb-shape-angles.svg"></div>
+                      </div>
+                      <div class="shapeBox flex align-center active">
+                        <div class="shape-line"><img src="assets/images/wb-shape-line.svg"></div>
+                      </div>
+                    </div>
+                    <div class="wb-title">邊框顏色</div>
+                    <div class="wb-drop wideColor flex">
+                      <div class="color flex align-center active">
+                        <div class="colorBox color-1"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-2"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-3"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-4"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-5"></div>
+                      </div>
+                    </div>
+                    <div class="wb-drop wideColor flex">
+                      <div class="color flex align-center">
+                        <div class="colorBox color-6"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-7"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-8"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox color-9"></div>
+                      </div>
+                      <div class="color flex align-center">
+                        <div class="colorBox"><img src="assets/images/wb-nocolor.svg"></div>
+                      </div>
+                    </div>
+                    <div class="wb-title">邊框粗細</div>
+                    <div class="wb-drop wideWidth flex">
+                      <div class="wideBox flex align-center active">
+                        <div class="dot wide-1"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-2"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-3"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-4"></div>
+                      </div>
+                      <div class="wideBox flex align-center">
+                        <div class="dot wide-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><img src="assets/images/wb-text.svg" id="wb-text"></li>
+              <li><img src="assets/images/wb-return.svg" id="wb-return"></li>
+              <li>
+                <div class="dropup"><img id="wb-del" src="assets/images/wb-del.svg">
+                  <div class="dropdown-menu del-all">
+                    <div class="flex">
+                      <p>刪除所有元件</p>
+                      <div class="del-btn">OK</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropup">
+                  <div id="wb-ratio">33%</div>
+                  <div class="dropdown-menu ratio">
+                    <div class="ratio-add">+</div>
+                    <div class="ratio-less">-</div>
+                    <div class="ratio-100">100%</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- chat-->
+      <div id="chat" class="flex justify-center">
+        <div class="chat-wrap">
+          <div class="allmsg">
+            <!--聊天內容ex-->
+            <!-- 對話內容區-->
+            <div class="w100">
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-p">P</li>
+                  <li class="msg-content">Like the color transition between right and left panel :D</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-h">H</li>
+                  <li class="msg-content">Hello, Solomon</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-s">S</li>
+                  <li class="msg-content">How’s going today</li>
+                </ul>
+              </div>
+              <div class="my-msg">
+                <div class="msg-time">02:43pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-k">K</li>
+                  <li class="msg-content">大家好</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-e">e</li>
+                  <li class="msg-content">worked on amazing project</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-p">P</li>
+                  <li class="msg-content">Like the color transition between right and left panel :D</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-h">H</li>
+                  <li class="msg-content">Hello, Solomon</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-s">S</li>
+                  <li class="msg-content">How’s going today</li>
+                </ul>
+              </div>
+              <div class="my-msg">
+                <div class="msg-time">02:43pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-k">K</li>
+                  <li class="msg-content">大家好</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-e">e</li>
+                  <li class="msg-content">worked on amazing project</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-p">P</li>
+                  <li class="msg-content">Like the color transition between right and left panel :D</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-h">H</li>
+                  <li class="msg-content">Hello, Solomon</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-s">S</li>
+                  <li class="msg-content">How’s going today</li>
+                </ul>
+              </div>
+              <div class="my-msg">
+                <div class="msg-time">02:43pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-k">K</li>
+                  <li class="msg-content">大家好</li>
+                </ul>
+              </div>
+              <div class="othe-msg">
+                <div class="msg-time">Peter Wei 02:42pm</div>
+                <ul class="flex">
+                  <li class="msg-label color-e">e</li>
+                  <li class="msg-content">worked on amazing project</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="send-msg">
+            <input type="" placeholder="請輸入文字">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- setting-panel 設定-->
+  <div id="setting-panel" class="setting-slider navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right">
+    <div class="subtitle"><span><img src="assets/images/icon-setting.svg"></span>設定
+      <div class="slider-close navbar-toggle offcanvas-toggle">X</div>
+    </div>
+    <div class="panel-group">
+      <p>視訊來源</p>
+      <select class="chosen-select chosen-transparent form-control">
+        <option value="1">facetime 內建攝影機</option>
+        <option value="2">123</option>
+        <option value="3">456</option>
+      </select>
+    </div>
+    <div class="panel-group">
+      <p>音訊來源</p>
+      <select class="chosen-select chosen-transparent form-control">
+        <option value="1">facetime 內建攝影機</option>
+        <option value="2">789</option>
+        <option value="3">000</option>
+      </select>
+    </div>
+    <hr class="line">
+    <div class="item-name">請說話</div>
+    <div class="panel-group">
+      <p>若音訊條有波動表示麥克風正常</p>
+      <div class="progress">
+        <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar"></div>
+      </div>
+    </div>
+    <hr class="line">
+    <div class="item-name">請按下播放鈕</div>
+    <div class="panel-group music">
+      <p>若聽到音樂聲表示聲音正常</p>
+      <div class="play-music flex justify-center"><img src="assets/images/icon-music.svg"></div>
+    </div>
+    <hr class="line">
+  </div>
+  <!-- host-panel 主控台-->
+  <div id="host-panel" class="setting-slider navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right flex">
+    <div class="subtitle"><span><img src="assets/images/icon-host.svg"></span>主控台
+      <div data-toggle="offcanvas" data-target="#host-panel" class="slider-close navbar-toggle offcanvas-toggle">X</div>
+    </div>
+    <div class="panel-group">
+      <div class="btn-group mute-allmic">
+        <div class="mic"><img src="assets/images/icon-mute.svg" class="no-mute"></div>
+        <div data-toggle="modal" data-target="#closeMicModal" class="btn-text">mute all mic</div>
+      </div>
+      <div class="btn-group open-allmic">
+        <div class="mic"><img src="assets/images/icon-mic.svg" class="no-open"></div>
+        <div class="btn-text">open all mic</div>
+      </div>
+      <div class="item-name">與會人員</div>
+      <div class="inner-addon right-addon mg-btm20"><i class="glyphicon glyphicon-search search"></i>
+        <input type="text" placeholder="以英文姓名搜尋">
+      </div>
+    </div>
+    <div class="panel-group name-list">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h5>Kate Lin</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center active"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn active"><span>assign to </span>host</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <h5>Cathy Wu</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn"><span>assign to </span>host</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <h5>Teddy Chang</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn"><span>assign to </span>host</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <h5>Solomon Chen</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center active"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn"><span>assign to </span>host</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <h5>Penny Haung</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center active"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn"><span>assign to </span>host</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <h5>Benny Liu 5</h5>
+          <div class="flex host-control">
+            <div class="host-mic flex justify-center active"><img src="assets/images/icon-mic.svg"></div>
+            <div class="host-btn"><span>assign to </span>host</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Modal-->
+  <!-- welcomeModal-->
+  <div id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true" class="modal TMP-modal fade">
+    <div class="modal-dialog">
+      <div style="display:block" class="modal-content">
+        <div class="modal-header">
+          <h4 id="screenModalLabel" class="modal-title text-center">
+            <div class="titlelogo-green"><img src="assets/images/icon-logo-green.svg" alt="TutorMeet+"></div>
+            <p>Welcome</p>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <h3 class="text-center">視訊及音訊</h3>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mg-btm40">
+              <h5>視訊來源</h5>
+              <select class="chosen-select chosen-transparent form-control">
+                <option value="1">facetime 內建攝影機</option>
+                <option value="2">123</option>
+                <option value="3">456</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-sm-6 mg-btm40">
+              <h5>音訊來源</h5>
+              <select class="chosen-select chosen-transparent form-control">
+                <option value="1">facetime 內建攝影機</option>
+                <option value="2">789</option>
+                <option value="3">000</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 border-right">
+              <h4 class="text-center">請說話</h4>
+              <h5 class="text-center">若音訊條有波動表示麥克風正常</h5>
+              <div class="setting-slider">
+                <div class="progress">
+                  <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar">           </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <h4 class="text-center">請按下播放鈕</h4>
+              <h5 class="text-center">若聽到音樂聲表示聲音正常</h5>
+              <div class="setting-slider">
+                <div class="play-music flex justify-center"><img src="assets/images/icon-music.svg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row noborder text-center">
+            <button type="button" data-dismiss="modal" class="btn btn-yes">完成</button>
+          </div>
+          <div class="row noborder text-center">
+            <div style="flex:3" class="chockbox flex">
+              <input type="checkbox"> 不要再顯示
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- screenModal-->
+  <div id="screenModal" tabindex="-1" role="dialog" aria-labelledby="screenModalLabel" aria-hidden="true" class="modal TMP-modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 id="screenModalLabel" class="modal-title text-center">
+            <div class="titlelogo"><img src="assets/images/icon-logo.svg" alt="TutorMeet+"></div>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <h4 class="text-center">確定向與會者共享您的螢幕？</h4>
+        </div>
+        <div class="modal-footer flex">
+          <button type="button" data-dismiss="modal" class="btn btn-no">否</button>
+          <button type="button" data-dismiss="modal" class="btn btn-yes">是</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- closeMicModal-->
+  <div id="closeMicModal" tabindex="-1" role="dialog" aria-labelledby="closeMicModalLabel" aria-hidden="true" class="modal TMP-modal fade">
+    <div class="modal-dialog">
+      <div style="display:block" class="modal-content">
+        <div class="modal-header">
+          <button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <h4 id="screenModalLabel" class="modal-title text-center">
+            <div class="titlelogo"><img src="assets/images/icon-logo.svg" alt="TutorMeet+"></div>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <h4 class="text-center">關閉所有與會者的麥克風？</h4>
+        </div>
+        <div class="modal-footer flex">
+          <div style="flex:3" class="chockbox flex">
+            <input type="checkbox"> 同時允許與會者打開自己的麥克風
+          </div>
+          <div class="mic-btn flex">
+            <button type="button" data-dismiss="modal" class="btn btn-no">否</button>
+            <button type="button" data-dismiss="modal" class="btn btn-yes">是</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script type="text/javascript" src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/layout.js"></script>

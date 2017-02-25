@@ -1,0 +1,71 @@
+ //邀請與會者
+ 
+ .invite-wrap {
+  width: 500px;
+  background: #37393F;
+  padding: 20px 20px 25px;
+  letter-spacing: 1px;
+  top: 68px;
+  right: -26px;
+  left: auto;
+  border: 0;
+  @include border-radius(0);
+  @include box-shadow (0 0 20px rgba(0, 0, 0, 0.5));
+
+  h4 {
+    color: $textGreen;
+    font-family: '微軟正黑體', 'Roboto', arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  input {
+    border: 1px solid rgba(255,255,255,.2);
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    @include border-radius(4px);
+  }
+  .item-left {
+    @include flex-width(2);
+  }
+  .item-right {
+    padding-left: 10px;
+    @include flex-width(3);
+  }
+  .append {
+    font-size: 16px;
+    margin: 5px 0 0;
+    cursor: pointer;
+    .add {
+      border: 3px solid $textGreen;
+      color: $textGreen;
+      padding: 0 6px;
+      font-size: 24px;
+      font-weight: bold;
+      vertical-align: -2px;
+      margin-right: 5px;
+      @include border-radius(50%);
+    }
+  }
+  .button {
+    font-size: 16px;
+    padding: 8px 20px;
+    outline: 0;
+    border: 0;
+    @include border-radius(20px);
+    @include background-gradient-horizontal($greenRight, $greenEnd);
+    @include transition(0.3s);
+
+  }
+  .button:hover {
+    color: #585858;
+    @include filter(contrast(2));
+    @include transition(0.3s);
+  }
+  .button:focus { outline: 0; @include box-shadow (0 0 0);}
+  .button:active{ outline: 0; @include box-shadow (0 0 0);}
+  #itemId       { font-size: 16px; vertical-align: 0px;}
+
+}
+@media only screen and (max-width: 1220px) {
+  .invite-wrap  { top: 61px; }
+}

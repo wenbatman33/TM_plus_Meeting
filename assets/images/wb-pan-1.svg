@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="a" d="M0.467,25 C0.467,38.549 11.45,49.533 25,49.533 C38.549,49.533 49.533,38.549 49.533,25 C49.533,11.45 38.549,0.467 25,0.467 C11.45,0.467 0.467,11.45 0.467,25 L0.467,25 Z"/>
+    <path id="c" d="M1,27 C0.916,26.553 0.105,28.716 0,31 L0,38.409 C3.055,39.774 6.438,40.533 10,40.533 C13.562,40.533 16.945,39.774 20,38.409 L20,31 C20.038,28.513 19.009,25.968 19,26 L10,0 L1,27 L1,27 Z"/>
+    <polygon id="e" points=".511 13.466 9.661 13.466 5 0"/>
+    <path id="g" d="M5.09,3.817 L0.078,0.079 C0.07,0.148 0.062,0.217 0.055,0.287 L0.055,8.433 C3.095,9.783 6.459,10.533 10,10.533 C13.562,10.533 16.945,9.774 20,8.409 L20,1 C20.004,0.733 19.995,0.465 19.977,0.199 L15.127,3.817 L10.107,0.072 L5.09,3.817 L5.09,3.817 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="b" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <polygon fill="#4B4D52" points="-4.533 54.534 54.534 54.534 54.534 -4.533 -4.533 -4.533" mask="url(#b)"/>
+    <g transform="translate(15 9)">
+      <mask id="d" fill="white">
+        <use xlink:href="#c"/>
+      </mask>
+      <polygon fill="#616367" points="-5 61 25.001 61 25.001 -5 -5 -5" mask="url(#d)"/>
+    </g>
+    <g transform="translate(20 9)">
+      <mask id="f" fill="white">
+        <use xlink:href="#e"/>
+      </mask>
+      <polygon fill="#FEFEFE" points="-7.945 18.467 18.467 18.467 18.467 -10.533 -7.945 -10.533" mask="url(#f)"/>
+    </g>
+    <g transform="translate(15 39)">
+      <mask id="h" fill="white">
+        <use xlink:href="#g"/>
+      </mask>
+      <polygon fill="#2A2C32" points="-4.945 29.182 25.163 29.182 25.163 -4.938 -4.945 -4.938" mask="url(#h)"/>
+    </g>
+  </g>
+</svg>

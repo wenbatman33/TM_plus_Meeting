@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>wb-pan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-132.000000, -124.000000)" stroke="#37CF88" stroke-width="1.5">
+            <g id="Group-27" transform="translate(145.000000, 135.500000) rotate(2.000000) translate(-145.000000, -135.500000) translate(133.000000, 124.000000)">
+                <path d="M18.2932107,1.41419835 C19.4143045,0.322598476 21.1827903,0.373111726 22.2423859,1.5280672 C23.3028126,2.68387884 23.2537804,4.50406813 22.1326866,5.59566801 L7.37968875,19.5166166 C6.96333,19.9155856 6.44142721,20.1013717 6.44142721,20.1013717 L0.415444589,22.1082031 L2.85209899,16.4036306 C2.85209899,16.4036306 3.08313239,15.7683623 3.58841406,15.2897706 L18.2932107,1.41419835 Z" id="Stroke-1" stroke-linejoin="round"></path>
+                <path d="M16.3913043,3.85677749 L19.6517463,7.40801505" id="Stroke-3" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

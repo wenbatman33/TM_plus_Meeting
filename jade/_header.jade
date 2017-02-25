@@ -1,0 +1,107 @@
+header.flex
+  .logo
+  // console-wrap
+  setion.console-wrap.flex.align-center
+    .member-info.flex.align-center
+      .name-label.color-k k
+      .name-sayhi
+        p kateKate linLin
+        p Host
+    .console-audio.flex.align-center.space-between
+      #console-mic.text-center
+        .border
+          p.flex.justify-center
+            img(src='static/images/icon-mic.svg')
+          .sp.sp-wave
+        span mic
+      #console-cam.text-center
+        .border
+          p.flex.justify-center
+            img(src='static/images/icon-cam.svg')
+        span cam
+      .cam-allopen
+        .w100.flex
+          h5 您的音訊預設開啟、視訊預設關閉
+          .cam-btn OK
+      #console-screen.text-center(data-toggle='modal', data-target='#screenModal')
+        .border
+          p.flex.justify-center
+            img(src='static/images/icon-screen.svg')
+        span screen
+        .screen-share
+          | 共享螢幕中
+    #host.navbar-toggle.offcanvas-toggle.console-item.flex.align-center
+      .w100
+        p.label-host
+        p host
+    #setting.navbar-toggle.offcanvas-toggle.console-item.flex.align-center
+      .w100
+        p.label-option
+        p setting
+  // end // console-wrap
+  // member-wrap
+  setion.member-wrap.flex.flex-end
+    .w100
+    .member-ctrl.flex.align-center
+      .dropdown
+        #search.flex.align-center.search
+          .member-item.color-k k
+          .member-item.color-e e
+          .member-item.color-s(style='background: url(static/images/photo.jpg);')
+          .member-item.color-s S
+          .member-item.member-count.color-gray +4
+        .dropdown-menu.search-wrap
+          h4
+            | 與會人員 
+            span 230
+          .inner-addon.right-addon.mg-btm20
+            i.glyphicon.glyphicon-search.search
+            input(type='text', placeholder='以英文姓名搜尋')
+          ul.name-list.list-group
+            li.list-group-item
+              span.badge host
+              | Kate Lin
+            li.list-group-item Cathy Wuu
+            li.list-group-item Teddy Chang
+            li.list-group-item Solomon Chen
+            li.list-group-item Kate Lin
+            li.list-group-item Cathy Wu
+            li.list-group-item Teddy Chang
+            li.list-group-item Solomon Chen
+            li.list-group-item Kate Lin
+            li.list-group-item Cathy Wu
+            li.list-group-item Teddy Chang
+            li.list-group-item Solomon Chen
+            li.list-group-item Kate Lin
+            li.list-group-item Cathy Wu
+            li.list-group-item Teddy Chang
+            li.list-group-item Solomon Chen
+            li.list-group-item Kate Lin
+            li.list-group-item Cathy Wu
+            li.list-group-item Teddy Chang
+            li.list-group-item Solomon Chen
+            li.list-group-item Kate Lin
+      .dropdown
+        #invite.member-item.member-add ＋
+        .dropdown-menu.invite-wrap
+          h4 邀請與會者
+          .w100.flex.mg-btm20
+            p.item-left
+              input(type='', placeholder='姓名')
+            p.item-right
+              input(type='', placeholder='email')
+          #add-item
+          .w100.flex
+            p.item-left.append
+              span.add +
+              | 增加邀請
+            p.item-right.text-right
+              .btn.button(type='')
+                | 邀請 
+                span#itemId 1
+                |  位與會者
+    .meetingID.flex.align-center
+      .w100.text-right
+        p meeting ID
+        p 9388428143
+  // end // member-wrap

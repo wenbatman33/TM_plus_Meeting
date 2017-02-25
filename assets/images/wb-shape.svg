@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="23px" viewBox="0 0 26 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>wp-shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-181.000000, -124.000000)" stroke="#37CF88" stroke-width="1.5">
+            <g id="Group" transform="translate(182.000000, 125.000000)">
+                <polygon id="Fill-1" stroke-linecap="round" stroke-linejoin="round" points="0 13.5099576 8.19616475 0 16.3923295 13.5099576"></polygon>
+                <path d="M23.7838645,12.962804 C23.7838645,17.1358606 20.4989815,20.521625 16.4459982,20.521625 C12.3956544,20.521625 9.10945167,17.1358606 9.10945167,12.962804 C9.10945167,8.78974743 12.3956544,5.40398304 16.4459982,5.40398304 C20.4989815,5.40398304 23.7838645,8.78974743 23.7838645,12.962804" id="Fill-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

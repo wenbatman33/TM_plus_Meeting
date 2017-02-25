@@ -1,0 +1,76 @@
+doctype html
+html
+  head
+    title TutorMeet+
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='renderer', content='webkit|ie-comp|ie-stand')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='address=no')
+    meta(name='viewport', content='width=device-width, user-scalable=0')
+    meta(name='viewport', content='initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width')
+    meta(name='viewport', content='initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no')
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+
+    // CSS
+    link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://vjs.zencdn.net/5.8.8/video-js.css')
+    link(rel='stylesheet', href='assets/css/animate.css')
+    link(rel='stylesheet', href='assets/css/chosen.min.css')
+    link(rel='stylesheet', href='assets/css/chosen-bootstrap.css')
+    link(rel='stylesheet', href='assets/css/bootstrap.offcanvas.css')
+    link(rel='stylesheet', href='assets/css/TutorMeetPlus.css')
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+body.TMP-body
+  .sub-wrapper
+    // header
+    include ./_header.jade
+    // speaker
+    section.speaker
+      | Now Speaker as 
+      span Kate Lin , Cathy Wu
+
+    // container
+    section.container.main
+
+      // video
+      #video
+        ul
+
+      // whiteboard
+      include ./whiteboard.jade
+
+      // chat
+      #chat.flex.justify-center
+        .chat-wrap
+          .allmsg
+
+            //聊天內容ex
+            include ./chatContent.jade
+
+          .send-msg
+            input(type='', placeholder='請輸入文字')
+
+  // setting-panel 設定
+  include ./settingPanel.jade
+
+  // host-panel 主控台
+  include ./hostPanel.jade
+
+  //Modal
+  include ./model.jade
+
+
+script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+script(type='text/javascript', src='http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js')
+script(type='text/javascript', src='http://vjs.zencdn.net/5.8.8/video.js')
+script(type='text/javascript', src='assets/js/bootstrap.min.js')
+script(type='text/javascript', src='assets/js/chosen.jquery.min.js')
+script(type='text/javascript', src='assets/js/layout.js')

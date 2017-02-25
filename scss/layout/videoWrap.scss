@@ -1,0 +1,159 @@
+#video {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 100;
+  @include flex-width(5);
+  
+  ul {
+    width: 100%;
+    height: 100%;
+
+    li {
+      background: #000;
+      color: #fff;
+      float: left;
+      position: relative;
+      @include box-shadow(0 0 20px rgba(0,0,0,0.5));
+
+      .video-icon {
+        position: absolute;
+        z-index: 5;
+        bottom: 8px;
+        left: 8px;
+        border: 4px solid #000;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .video-icon p {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 32px;
+        background-color: $textGray;
+        border: 4px solid #3E4148;
+        @include border-radius(50%);
+      }
+      .video-icon p img {
+        @include filter(opacity(0.3) saturate(0));
+        width: 25px;
+        padding-left: 1px;
+      }
+      .active {
+        border: 4px solid #3DDB85;
+      }
+      .active p img {
+        @include filter(opacity(1) saturate(1));
+      }
+      .video-name {
+        position: absolute;
+        z-index: 5;
+        width: 80%;
+        text-align: right;
+        bottom: 0;
+        right: 0;
+        padding: 8px;
+        text-shadow: 0 0 8px #000, 0 0 8px #000, 0 0 8px #000;
+      }    
+
+    }
+    .no-video {
+      background-color: $textGray;
+      @include flex;
+      @include align-center;
+      @include justify-center;
+
+      .icon-camXL {
+        margin-top: -25px;
+        img { width: 90%; }
+      }
+      p {
+        font-size: 17px;
+        text-align: center;
+        color: #676972;
+        line-height: 35px;
+        font-weight: 600;
+      }
+      .video-icon {
+        display: none;
+      }
+      .video-name {
+        display: none;
+      }
+      video {
+        display: none;
+      }
+    }
+
+    video, .video-js {
+      width: 100%;
+      height: 100%;
+    }
+
+  }  
+}
+
+
+
+li.column-1 {
+  width: 98.5%;
+  height: 98.2%;
+}
+li.column-2 {
+  width: 100%;
+  height: 48%;
+  margin-bottom: 3%;
+}
+li.column-3, li.column-4 {
+  width: 47.5%;
+  height: 48%;
+  margin: 0 2% 3% 0;
+}
+
+li.column-5, li.column-6 {
+  width: 47.5%;
+  height: 31.5%;
+  margin: 0 1.5% 3% 0;
+}
+li.column-7, li.column-8, li.column-9 {
+  width: 31.5%;
+  height: 31.5%;
+  margin: 0 1.5% 3% 0;
+}
+
+.video-js .vjs-big-play-button {
+  top: 50%;
+  bottom: 50%;
+  margin-top: -30px;
+  left: 50%;
+  right: 50%;
+  margin-left: -45px;
+  border: 0;
+  background: transparent;
+  font-size: 4em;
+  width: 2em;
+  text-shadow: 0 0 15px #000;
+}
+li.column-1 .video-js .vjs-big-play-button, li.column-2 .video-js .vjs-big-play-button, li.column-3 .video-js .vjs-big-play-button {
+  font-size: 8em;
+  margin-left: -83px;
+  margin-top: -52px;
+}
+
+
+.video-js:hover .vjs-big-play-button {
+  background: transparent;
+}
+.vjs-has-started .vjs-control-bar {
+  display: none;
+  padding: 3px 0 0 0;
+}
+
+@media only screen and (max-width: 1220px) {
+  #video ul li .video-name    { width: 80%; font-size: 12px; font-weight: 300;  padding: 6px 8px;}
+  #video ul li .video-icon p  { width: 34px; height: 34px; line-height: 27px; }
+  #video                      { @include flex-width(5); }
+  #video ul .no-video .icon-camXL img { width: 70%; }
+  #video ul                   { padding-left: 5px; }
+}

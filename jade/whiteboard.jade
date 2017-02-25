@@ -1,0 +1,127 @@
+#whiteboard.flex
+  .wb-wrap.w100
+    .wb-content.flex.align-center.justify-center
+      ul
+        li
+          img(src='assets/images/wb-dropfile.svg')
+        li Drop your files here
+    .wb-console.flex.align-center.justify-center
+      ul.panel
+        li
+          img(src='assets/images/wb-arrow.svg')#wb-arrow
+        li
+          .dropup
+            img#wb-pan(src='assets/images/wb-pan.svg')
+            .dropdown-menu.pan-shape
+              .wb-title 筆觸
+              .wb-drop.flex.nobetween
+                .panBox.flex.align-center.active
+                  img(src='assets/images/wb-pan-1.svg')
+                .panBox.flex.align-center
+                  img(src='assets/images/wb-pan-2.svg')
+
+              .wb-title 顏色
+              .wb-drop.fillColor.flex
+                .color.flex.align-center
+                  .colorBox.color-1
+                .color.flex.align-center.active
+                  .colorBox.color-10
+                .color.flex.align-center
+                  .colorBox.color-2
+                .color.flex.align-center
+                  .colorBox.color-3
+                .color.flex.align-center
+                  .colorBox.color-4
+              .wb-drop.fillColor.flex
+                .color.flex.align-center
+                  .colorBox.color-5
+                .color.flex.align-center
+                  .colorBox.color-6
+                .color.flex.align-center
+                  .colorBox.color-7
+                .color.flex.align-center
+                  .colorBox.color-8
+                .color.flex.align-center
+                  .colorBox.color-9
+              .wb-title 粗細
+              .wb-drop.fillWide.flex
+                .wideBox.flex.align-center
+                  .dot.wide-1
+                .wideBox.flex.align-center.active
+                  .dot.wide-2
+                .wideBox.flex.align-center
+                  .dot.wide-3
+                .wideBox.flex.align-center
+                  .dot.wide-4
+                .wideBox.flex.align-center
+                  .dot.wide-5
+        li
+          .dropup
+            img#wb-shape(src='assets/images/wb-shape.svg')
+            .dropdown-menu.pan-shape
+              .wb-title 形狀
+              .wb-drop.flex
+                .shapeBox.flex.align-center
+                  .shape-square
+                .shapeBox.flex.align-center
+                    .shape-circle
+                .shapeBox.flex.align-center
+                  .shape-angles
+                    img(src='assets/images/wb-shape-angles.svg')
+                .shapeBox.flex.align-center.active
+                  .shape-line
+                    img(src='assets/images/wb-shape-line.svg')
+              .wb-title 邊框顏色
+              .wb-drop.wideColor.flex
+                .color.flex.align-center.active
+                  .colorBox.color-1
+                .color.flex.align-center
+                  .colorBox.color-2
+                .color.flex.align-center
+                  .colorBox.color-3
+                .color.flex.align-center
+                  .colorBox.color-4
+                .color.flex.align-center
+                  .colorBox.color-5
+              .wb-drop.wideColor.flex
+                .color.flex.align-center
+                  .colorBox.color-6
+                .color.flex.align-center
+                  .colorBox.color-7
+                .color.flex.align-center
+                  .colorBox.color-8
+                .color.flex.align-center
+                  .colorBox.color-9
+                .color.flex.align-center
+                  .colorBox
+                    img(src='assets/images/wb-nocolor.svg')
+              .wb-title 邊框粗細
+              .wb-drop.wideWidth.flex
+                .wideBox.flex.align-center.active
+                  .dot.wide-1
+                .wideBox.flex.align-center
+                  .dot.wide-2
+                .wideBox.flex.align-center
+                  .dot.wide-3
+                .wideBox.flex.align-center
+                  .dot.wide-4
+                .wideBox.flex.align-center
+                  .dot.wide-5
+        li
+          img(src='assets/images/wb-text.svg')#wb-text
+        li
+          img(src='assets/images/wb-return.svg')#wb-return
+        li
+          .dropup
+            img#wb-del(src='assets/images/wb-del.svg')
+            .dropdown-menu.del-all
+              .flex
+                p 刪除所有元件
+                .del-btn OK
+        li
+          .dropup
+            #wb-ratio 33%
+            .dropdown-menu.ratio
+              .ratio-add +
+              .ratio-less -
+              .ratio-100 100%

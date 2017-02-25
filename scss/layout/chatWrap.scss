@@ -1,0 +1,87 @@
+#chat {
+  width: 300px;
+  height: 100%;
+}
+.chat-wrap {
+  width: 97%;
+  height: 98%;
+  background-color: $textGray;
+  margin: 0 10px;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 200;
+  line-height: 22px;
+  @include box-shadow(0 0 20px rgba(0,0,0,0.5));
+}
+.allmsg {
+  width: 100%;
+  height: 95%;
+
+}
+.allmsg>.w100 {
+  height: 100%;
+  padding: 5px 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.send-msg {
+  width: 100%;
+  height: 5%;
+  background-color: #45474E;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #c5c5c5;  
+    background-color: #45474E;
+    border: 0;
+  }
+
+}
+
+.othe-msg, .my-msg {
+  margin-bottom: 10px;
+}
+.msg-time {
+  width: 100%;
+  font-size: 12px;
+  padding: 0 0 0 55px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.msg-label {
+  min-width: 36px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 10px 0 0;
+  text-transform:uppercase;
+  @include border-radius(50%);
+}
+.msg-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #c3c3c3;
+  padding: 8px;
+  font-size: 15px;
+  @include border-radius(15px);
+}
+.my-msg ul {
+  flex-direction: row-reverse;
+}
+.my-msg .msg-label {
+  margin: 0  0 0 10px;
+}
+.my-msg .msg-time {
+  padding: 0 55px 0 0;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1220px) {
+  #chat     { width: 260px; }
+  .msg-content  { font-weight: 300; font-size: 13px; line-height: 18px;}
+  .allmsg       { height: 93%; }
+  .send-msg     { height: 7%; }
+}

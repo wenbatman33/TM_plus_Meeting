@@ -1,0 +1,31 @@
+#setting-panel.setting-slider.navbar-offcanvas.navbar-offcanvas-touch.navbar-offcanvas-right
+  .subtitle
+    span
+      img(src='assets/images/icon-setting.svg')
+    | 設定
+    .slider-close.navbar-toggle.offcanvas-toggle X
+  .panel-group
+    p 視訊來源
+    select.chosen-select.chosen-transparent.form-control
+      option(value='1') facetime 內建攝影機
+      option(value='2') 123
+      option(value='3') 456
+  .panel-group
+    p 音訊來源
+    select.chosen-select.chosen-transparent.form-control
+      option(value='1') facetime 內建攝影機
+      option(value='2') 789
+      option(value='3') 000
+  hr.line
+  .item-name 請說話
+  .panel-group
+    p 若音訊條有波動表示麥克風正常
+    .progress
+      .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+  hr.line
+  .item-name 請按下播放鈕
+  .panel-group.music
+    p 若聽到音樂聲表示聲音正常
+    .play-music.flex.justify-center
+      img(src='assets/images/icon-music.svg')
+  hr.line

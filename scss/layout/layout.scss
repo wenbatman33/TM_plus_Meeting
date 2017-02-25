@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300|Source+Sans+Pro:200,300,400');
+*{
+  @include box-sizing (border-box);
+}
+body.TMP-body {
+  background-color: #37393F;
+  color: #fff;
+  overflow: hidden;
+  -webkit-overflow-scrolling: auto;
+  -webkit-transform: translateZ(0);
+  position: relative;
+
+}
+html, body {
+  height: 100%;
+  padding-bottom: 0;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+  min-width: 1024px;
+  min-height: 650px;
+  overflow: auto;
+}
+.sub-wrapper {
+  height: 100%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-overflow-scrolling: auto;
+  // min-width: 1024px;
+  // min-height: 650px;
+  // overflow: auto;
+}
+
+
+//header功能選單
+@import '_header.scss';
+//memberWrap
+@import 'memberWrap.scss';
+ //Now Speaker
+@import 'speaker.scss';
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 87%;
+  padding: 15px 25px 35px;
+  @include flex;
+}
+
+//聊天室
+@import 'chatWrap.scss';
+//白板
+@import 'whiteboard.scss';
+//視訊
+@import 'videoWrap.scss';
+
+//MIC動態效果
+@import 'components/wave.scss';
+//popup
+@import 'components/modal.scss';
+
+//右邊滑動選單
+@import 'components/sliderPanel.scss';
+
+
+/* ---------- 共用  ----------*/
+
+.flex           { @include flex; }
+.align-center   { @include align-center; }    /*- 垂直置中 -*/
+.align-end      { @include align-end; }       /*- 垂直靠下 -*/
+.space-between  { @include space-between; }   /*- 平均間隔 -*/
+.justify-center { @include justify-center; }  /*- 水平對齊 -*/
+.flex-end       { @include flex-end; }        /*- 水平靠右 -*/
+
+.mg-btm20       { margin-bottom: 20px; }
+.mg-btm40       { margin-bottom: 40px; }
+.noborder       { border: 0; }
+.nopadding      { padding: 0; }
+.w100           { width: 100%; }
+.color-gray     { background: #45474B; }
+.color-a        { background: #6a71e5; }
+.color-b        { background: #35ba9d; }
+.color-c        { background: #fff; color: #5D5D5D; }
+.color-d        { background: #858585; }
+.color-e        { background: #0091ff; }
+.color-f        { background: #35b654; }
+.color-g        { background: #bb3a4e; }
+.color-h        { background: #9244a2; }
+.color-i        { background: #f3b646; }
+.color-j        { background: #3ddb85; }
+.color-k        { background: #ff5c5c; }
+.color-l        { background: #00c4eb; }
+.color-m        { background: #222428; }
+.color-n        { background: #89cfff; }
+.color-o        { background: #2d5283; }
+.color-p        { background: #ff7200; }
+.color-q        { background: #ffb1b1; }
+.color-r        { background: #b9ae25; }
+.color-s        { background: #FFF362; color: #5D5D5D; }
+.color-t        { background: #00c3ca; }
+.color-u        { background: #9e8adb; }
+.color-v        { background: #e93a88; }
+.color-w        { background: #9acc54; }
+.color-x        { background: #5145ab; }
+.color-y        { background: #e29747; }
+.color-z        { background: #77e9d0; color: #5D5D5D; }
+
+
+.btn.focus, .btn:active, .btn:hover { 
+  outline: none; 
+  border: none;
+  @include box-shadow (0 0 0);
+}
+button::-moz-focus-inner {
+  border: 0;
+  border: none;
+  @include box-shadow (0 0 0);
+}
+a:focus, a:active { 
+  outline: none;
+  border: none;
+  @include box-shadow (0 0 0);
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.search {
+  font-size: 16px;
+  color: rgba(255,255,255,.3);
+  top: 3px;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+@media only screen and (max-width: 1220px) {
+  .main     { padding: 15px 10px 25px; height: 85%;}
+}

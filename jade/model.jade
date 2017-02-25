@@ -1,0 +1,83 @@
+// welcomeModal
+#welcomeModal.modal.TMP-modal.fade(tabindex='-1', role='dialog', aria-labelledby='welcomeModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content(style='display:block')
+      .modal-header
+        h4#screenModalLabel.modal-title.text-center
+          .titlelogo-green
+            img(src='assets/images/icon-logo-green.svg', alt='TutorMeet+')
+          p Welcome
+      .modal-body
+        h3.text-center 視訊及音訊
+        .row
+          .col-md-6.col-sm-6.mg-btm40
+            h5 視訊來源
+            select.chosen-select.chosen-transparent.form-control
+              option(value='1') facetime 內建攝影機
+              option(value='2') 123
+              option(value='3') 456
+          .col-md-6.col-sm-6.mg-btm40
+            h5 音訊來源
+            select.chosen-select.chosen-transparent.form-control
+              option(value='1') facetime 內建攝影機
+              option(value='2') 789
+              option(value='3') 000
+        .row
+          .col-md-6.col-sm-6.border-right
+            h4.text-center 請說話
+            h5.text-center 若音訊條有波動表示麥克風正常
+            .setting-slider
+              .progress
+                .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')            
+          .col-md-6.col-sm-6
+            h4.text-center 請按下播放鈕
+            h5.text-center 若聽到音樂聲表示聲音正常
+            .setting-slider
+              .play-music.flex.justify-center
+                img(src='assets/images/icon-music.svg')
+        .row.noborder.text-center
+          button.btn.btn-yes(type='button', data-dismiss='modal') 完成
+        .row.noborder.text-center
+          .chockbox.flex(style='flex:3')
+            input(type='checkbox')
+            |  不要再顯示
+      //- .modal-footer.flex
+
+
+// screenModal
+#screenModal.modal.TMP-modal.fade(tabindex='-1', role='dialog', aria-labelledby='screenModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal')
+          span(aria-hidden='true') ×
+          span.sr-only Close
+        h4#screenModalLabel.modal-title.text-center
+          .titlelogo
+            img(src='assets/images/icon-logo.svg', alt='TutorMeet+')
+      .modal-body
+        h4.text-center 確定向與會者共享您的螢幕？
+      .modal-footer.flex
+        button.btn.btn-no(type='button', data-dismiss='modal') 否
+        button.btn.btn-yes(type='button', data-dismiss='modal') 是
+
+// closeMicModal
+#closeMicModal.modal.TMP-modal.fade(tabindex='-1', role='dialog', aria-labelledby='closeMicModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content(style='display:block')
+      .modal-header
+        button.close(type='button', data-dismiss='modal')
+          span(aria-hidden='true') ×
+          span.sr-only Close
+        h4#screenModalLabel.modal-title.text-center
+          .titlelogo
+            img(src='assets/images/icon-logo.svg', alt='TutorMeet+')
+      .modal-body
+        h4.text-center 關閉所有與會者的麥克風？
+      .modal-footer.flex
+        .chockbox.flex(style='flex:3')
+          input(type='checkbox')
+          |  同時允許與會者打開自己的麥克風
+        .mic-btn.flex
+          button.btn.btn-no(type='button', data-dismiss='modal') 否
+          button.btn.btn-yes(type='button', data-dismiss='modal') 是

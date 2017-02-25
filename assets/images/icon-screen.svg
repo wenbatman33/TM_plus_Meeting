@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-screen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.016278%" y1="-46.9238281%" x2="50.016278%" y2="159.564887%" id="linearGradient-1">
+            <stop stop-color="#FF7A60" offset="0%"></stop>
+            <stop stop-color="#FF3E6A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cssSprite" transform="translate(-219.000000, -98.000000)" stroke="url(#linearGradient-1)" stroke-width="2">
+            <path d="M220.28685,99.6272634 C220.28685,99.0732768 220.680918,98.8431084 221.166655,99.1129624 L235.348785,106.991923 C235.834688,107.261869 235.834522,107.69963 235.348785,107.969484 L221.166655,115.848446 C220.680752,116.118392 220.28685,115.899373 220.28685,115.334144 L220.28685,99.6272634 Z" id="icon-screen"></path>
+        </g>
+    </g>
+</svg>
